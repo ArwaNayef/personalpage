@@ -1,0 +1,59 @@
+body{
+	background-color: pink;
+}
+h1{
+	text-align: center;
+	color: red;
+}
+h1:hover{
+	color: green;
+}
+h2{
+	text-align: center;
+	color: gray;
+}
+p{
+	text-align: right;
+	color: black;
+}
+
+.styling{
+	color: blue;
+	font-size:20px;
+	text-align: left
+}
+.list{
+	display: inline-block;
+}
+.center{
+	width: 1000px;
+	height :1000px;
+	background-image: url("http://brandtwist.com/wp-content/uploads/2013/05/Personal-Brand.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+}
+.space{
+	margin: 10px 10px;
+}
+
+.nav_bar li{
+	display: inline;
+	padding: 10px 10px;
+
+}
+
+.nav_bar li:hover{
+	color: white;
+	background-color:gray;
+}
+.nav_bar{
+	border: blue solid 5px;
+	padding: 20px 20px;
+}
+
+li a{
+	text-decoration: none;
+}
