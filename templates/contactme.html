@@ -1,0 +1,25 @@
+{%extends "layout.html"%}
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="../static/stylesheets/style1.css">
+{% endblock %}
+
+
+{% block body %}
+	<form action="{{ url_for('contactmeres')}}" method="post">
+		First name:<br>
+		<input type="text" name="firstname"><br>
+		Last name:<br>
+		<input type="text" name="lastname"><br><br>
+
+		Gender:<br>
+		<input type="radio" name="gender" value="Female" checked> Female <br>
+		<input type="radio" name="gender" value="Male" >Male <br>
+		<input type="radio" name="gender" value="other" >Other <br><br>
+
+		Messege:<br>
+		<textarea class="sms" type="text" name="messege"> </textarea>
+
+		<input type="submit" name="submit" value="submit"> <br>
+	</form>
+{% endblock %}
+

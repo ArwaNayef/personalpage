@@ -39,3 +39,9 @@ li a{
 	width:500px;
 	margin:auto;
 }
+
+.sms{
+	width: 500px;
+	height: 100px;
+	resize: none;
+}

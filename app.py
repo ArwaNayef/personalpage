@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+
 import random
 app = Flask(__name__)
 
@@ -21,6 +22,20 @@ def wecodee ():
 def access ():
 	return render_template("access.html")
 
+
+@app.route("/contactme")
+def contactme ():
+	return render_template("contactme.html")
+
+@app.route("/contactme_response",methods= ['POST'])
+def contactmeres():
+	user_firstname= request.form["firstname"]
+	user_lastname= request.form["lastname"]
+	user_message= request.form["messege"]
+	user_gender= request.form["gender"]
+	#return user_firstname+ " " +user_lastname+ " " +user_messege + user_gender
+	return render_template("form-data.html", firstname=user_firstname, 
+		lastname=user_lastname,user_message=message , user_gender=gender)
 
 if __name__ =="__main__":
 	app.run()
